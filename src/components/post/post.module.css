@@ -1,0 +1,28 @@
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.font {
+  font-size: 40px;
+}
+
+.avatar {
+  margin-left: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
