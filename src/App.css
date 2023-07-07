@@ -16,3 +16,8 @@
   gap: 40px;
   margin-top: 20px;
 }
+
+.app-wrapper-dialogs {
+  grid-area: c;
+  background-color: burlywood;
+}
