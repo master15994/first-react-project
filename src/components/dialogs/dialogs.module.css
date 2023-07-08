@@ -1,0 +1,19 @@
+.dialogs {
+  display: flex;
+  gap: 100px;
+}
+.dialog {
+  color: white;
+  font-style: italic;
+  font-size: 25px;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+.text {
+  color: black;
+  font-style: italic;
+  font-size: 25px;
+}

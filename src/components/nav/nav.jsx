@@ -16,7 +16,7 @@ const Nav = props => {
           <NavLink to="/music">{props.classes.mu}</NavLink>
         </li>
         <li>
-          <NavLink to="/messages">{props.classes.m}</NavLink>
+          <NavLink to="/messages">{props.classes.n}</NavLink>
         </li>
         <li>
           <NavLink to="/settings">{props.classes.s}</NavLink>

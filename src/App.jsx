@@ -12,7 +12,7 @@ import Settings from './components/settings/settings';
 const App = () => {
   const classes = {
     p: 'Profile',
-    m: 'Messages',
+    m: 'Message',
     mu: 'Music',
     n: 'News',
     s: 'Settings',
@@ -26,7 +26,7 @@ const App = () => {
         <div className="app-wrapper-dialogs">
           <Routes>
             <Route path="/profile" element={<Content />} />
-            <Route path="/dialogs" element={<Dialogs />} />
+            <Route exact path="/dialogs/*" element={<Dialogs />} />
             <Route path="/music" element={<Music />} />
             <Route path="/messages" element={<Messages />} />
             <Route path="/settings" element={<Settings />} />
