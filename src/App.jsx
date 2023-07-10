@@ -9,24 +9,25 @@ import Music from './components/music/music';
 import Messages from './components/messages/messages';
 import Settings from './components/settings/settings';
 
-const App = () => {
-  const classes = {
-    p: 'Profile',
-    m: 'Message',
-    mu: 'Music',
-    n: 'News',
-    s: 'Settings',
-  };
-
+const App = props => {
   return (
     <BrowserRouter>
       <div className="app-wrapper">
         <Header />
-        <Nav classes={classes} />
+        <Nav classes={props.appStore.classes} />
         <div className="app-wrapper-dialogs">
           <Routes>
             <Route path="/profile" element={<Content />} />
-            <Route exact path="/dialogs/*" element={<Dialogs />} />
+            <Route
+              exact
+              path="/dialogs/*"
+              element={
+                <Dialogs
+                  dialogs={props.appStore.personData}
+                  messages={props.appStore.messageData}
+                />
+              }
+            />
             <Route path="/music" element={<Music />} />
             <Route path="/messages" element={<Messages />} />
             <Route path="/settings" element={<Settings />} />
